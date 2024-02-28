@@ -9,7 +9,7 @@ public class Professor {
     public static void printProfessores(boolean comCategoria){
         for(Professor p: Professores){
             if (comCategoria)
-                System.out.println(p.toString()+" Categoria:"+p.classifica());
+                System.out.println(p.toString()+" Categoria: "+p.classifica());
             else
                 System.out.println(p.toString());
         }
@@ -40,6 +40,6 @@ public class Professor {
 
     @Override
     public String toString() {
-        return "Professor: " + nome + ", anos de experiencia:" + anosExperiencia;
+        return "Professor: " + nome + ", anos de experiencia: " + anosExperiencia;
     }
 }
